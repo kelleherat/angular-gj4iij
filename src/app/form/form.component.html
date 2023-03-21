@@ -1,0 +1,11 @@
+<h5>Model as JSON</h5>
+<pre>
+{{ model | json }}
+</pre>
+<hr>
+<h5>Model in form</h5>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form">
+  </formly-form>
+  <button type="submit" class="btn btn-success submit-button">Submit</button>
+</form>
